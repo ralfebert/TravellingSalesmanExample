@@ -10,9 +10,9 @@ func cost(path: [HasLocation]) -> Double {
     path.adjacentPairs().map { a, b in a.location.distance(to: b.location) }.reduce(0, +)
 }
 
-func travellingSalesmanBruteForce<Location: HasLocation>(cities: [Location]) -> [Location] {
-    guard let start = cities.first else { return [] }
-    let remaining = cities.dropFirst()
+func travellingSalesmanBruteForce<Location: HasLocation>(locations: [Location]) -> [Location] {
+    guard let start = locations.first else { return [] }
+    let remaining = locations.dropFirst()
 
     let paths = remaining.permutations().map { [start] + $0 }
 

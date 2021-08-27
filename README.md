@@ -6,7 +6,7 @@ See [TravellingSalesmanExample/TravellingSalesmanBruteForce.swift](TravellingSal
 
 ## Improvements already implemented
 
-* Use permutations / adjacentPairs from Swift Algorithms
+* Use permutations / adjacentPairs from [Swift Algorithms](https://github.com/apple/swift-algorithms)
 * Use the Euclid package to compute the distance of two CLLocationCoordinate2D, see https://stackoverflow.com/a/68958391/128083
 * Use an interface HasLocation to allow arbitrary input types
 
