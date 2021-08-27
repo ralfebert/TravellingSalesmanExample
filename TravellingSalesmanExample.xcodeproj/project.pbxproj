@@ -404,15 +404,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CounterExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravellingSalesmanExample/Preview Content\"";
 				DEVELOPMENT_TEAM = R476D442DR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CounterExample/Info.plist;
+				INFOPLIST_FILE = TravellingSalesmanExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CounterExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TravellingSalesmanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,15 +425,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"CounterExample/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TravellingSalesmanExample/Preview Content\"";
 				DEVELOPMENT_TEAM = R476D442DR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = CounterExample/Info.plist;
+				INFOPLIST_FILE = TravellingSalesmanExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.CounterExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TravellingSalesmanExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,16 +9,16 @@ struct City {
 extension City {
 
     static let exampleCities = [
-        City(name: "Berlin", position: CLLocationCoordinate2D(latitude: 52.518, longitude: 13.408)),
-        City(name: "Leipzig", position: CLLocationCoordinate2D(latitude: 51.340, longitude: 12.360)),
-        City(name: "Dresden", position: CLLocationCoordinate2D(latitude: 51.050, longitude: 13.737)),
-        City(name: "München", position: CLLocationCoordinate2D(latitude: 48.137, longitude: 11.576)),
-        City(name: "Hamburg", position: CLLocationCoordinate2D(latitude: 53.551, longitude: 9.993)),
-        City(name: "Frankfurt", position: CLLocationCoordinate2D(latitude: 50.110, longitude: 8.682)),
-        City(name: "Kiel", position: CLLocationCoordinate2D(latitude: 54.323, longitude: 10.139)),
-        City(name: "Stuttgart", position: CLLocationCoordinate2D(latitude: 48.783, longitude: 9.183)),
-        City(name: "Karlsruhe", position: CLLocationCoordinate2D(latitude: 49.006, longitude: 8.403)),
-        City(name: "Hannover", position: CLLocationCoordinate2D(latitude: 52.370, longitude: 9.733)),
+        City(name: "Berlin", position: .init(latitude: 52.518, longitude: 13.408)),
+        City(name: "Leipzig", position: .init(latitude: 51.340, longitude: 12.360)),
+        City(name: "Dresden", position: .init(latitude: 51.050, longitude: 13.737)),
+        City(name: "München", position: .init(latitude: 48.137, longitude: 11.576)),
+        City(name: "Hamburg", position: .init(latitude: 53.551, longitude: 9.993)),
+        City(name: "Frankfurt", position: .init(latitude: 50.110, longitude: 8.682)),
+        City(name: "Kiel", position: .init(latitude: 54.323, longitude: 10.139)),
+        City(name: "Stuttgart", position: .init(latitude: 48.783, longitude: 9.183)),
+        City(name: "Karlsruhe", position: .init(latitude: 49.006, longitude: 8.403)),
+        City(name: "Hannover", position: .init(latitude: 52.370, longitude: 9.733)),
     ]
 
 }
