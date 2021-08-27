@@ -1,4 +1,4 @@
-@testable import CounterExample
+@testable import TravellingSalesmanExample
 import XCTest
 
 class TravellingSalesmanExampleTests: XCTestCase {
