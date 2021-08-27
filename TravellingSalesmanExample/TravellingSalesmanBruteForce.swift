@@ -39,7 +39,7 @@ func cost(path: [City]) -> Double {
 }
 
 func travellingSalesmanBruteForce(cities: [City]) -> [City] {
-    let start = cities.first!
+    guard let start = cities.first else { return [] }
     let remaining = cities.dropFirst()
 
     let paths = remaining.permutations().map { [start] + $0 }
