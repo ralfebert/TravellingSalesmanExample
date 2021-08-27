@@ -4,7 +4,7 @@ import XCTest
 class TravellingSalesmanExampleTests: XCTestCase {
 
     func testStraightforwardCases() {
-        XCTAssertEqual([], travellingSalesmanBruteForce(cities: []).map(\.name))
+        XCTAssertEqual([], travellingSalesmanBruteForce(cities: [City]()).map(\.name))
         XCTAssertEqual(["Berlin"], travellingSalesmanBruteForce(cities: Array(City.exampleCities[0 ... 0])).map(\.name))
         XCTAssertEqual(["Berlin", "Leipzig"], travellingSalesmanBruteForce(cities: Array(City.exampleCities[0 ... 1])).map(\.name))
     }

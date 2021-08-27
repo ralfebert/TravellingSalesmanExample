@@ -10,6 +10,9 @@
 		BF3CC56B26D95F8D005187FF /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CC56A26D95F8D005187FF /* Algorithms */; };
 		BF3CC56D26D965E6005187FF /* TravellingSalesmanBruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC56C26D965E6005187FF /* TravellingSalesmanBruteForce.swift */; };
 		BF3CC57526D9661C005187FF /* TravellingSalesmanExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC57426D9661C005187FF /* TravellingSalesmanExampleTests.swift */; };
+		BF3CC57D26D96E3B005187FF /* Euclid in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CC57C26D96E3B005187FF /* Euclid */; };
+		BF3CC57F26D96EB0005187FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF3CC57E26D96EB0005187FF /* README.md */; };
+		BF3CC58126D970D2005187FF /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC58026D970D2005187FF /* City.swift */; };
 		BFE0F5AC26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0F5AB26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift */; };
 		BFE0F5AE26D8E54A009BD997 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0F5AD26D8E54A009BD997 /* ContentView.swift */; };
 		BFE0F5B026D8E54B009BD997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE0F5AF26D8E54B009BD997 /* Assets.xcassets */; };
@@ -30,6 +33,8 @@
 		BF3CC56C26D965E6005187FF /* TravellingSalesmanBruteForce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellingSalesmanBruteForce.swift; sourceTree = "<group>"; };
 		BF3CC57226D9661C005187FF /* TravellingSalesmanExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravellingSalesmanExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3CC57426D9661C005187FF /* TravellingSalesmanExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellingSalesmanExampleTests.swift; sourceTree = "<group>"; };
+		BF3CC57E26D96EB0005187FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF3CC58026D970D2005187FF /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		BFE0F5A826D8E54A009BD997 /* TravellingSalesmanExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravellingSalesmanExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE0F5AB26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravellingSalesmanExampleApp.swift; sourceTree = "<group>"; };
 		BFE0F5AD26D8E54A009BD997 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3CC57D26D96E3B005187FF /* Euclid in Frameworks */,
 				BF3CC56B26D95F8D005187FF /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +74,7 @@
 		BFE0F59F26D8E54A009BD997 = {
 			isa = PBXGroup;
 			children = (
+				BF3CC57E26D96EB0005187FF /* README.md */,
 				BFE0F5AA26D8E54A009BD997 /* TravellingSalesmanExample */,
 				BF3CC57326D9661C005187FF /* TravellingSalesmanExampleTests */,
 				BFE0F5A926D8E54A009BD997 /* Products */,
@@ -89,6 +96,7 @@
 				BFE0F5AB26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift */,
 				BFE0F5AD26D8E54A009BD997 /* ContentView.swift */,
 				BF3CC56C26D965E6005187FF /* TravellingSalesmanBruteForce.swift */,
+				BF3CC58026D970D2005187FF /* City.swift */,
 				BFE0F5AF26D8E54B009BD997 /* Assets.xcassets */,
 				BFE0F5B426D8E54B009BD997 /* Info.plist */,
 				BFE0F5B126D8E54B009BD997 /* Preview Content */,
@@ -140,6 +148,7 @@
 			name = TravellingSalesmanExample;
 			packageProductDependencies = (
 				BF3CC56A26D95F8D005187FF /* Algorithms */,
+				BF3CC57C26D96E3B005187FF /* Euclid */,
 			);
 			productName = CounterExample;
 			productReference = BFE0F5A826D8E54A009BD997 /* TravellingSalesmanExample.app */;
@@ -174,6 +183,7 @@
 			mainGroup = BFE0F59F26D8E54A009BD997;
 			packageReferences = (
 				BF3CC56926D95F8D005187FF /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */,
 			);
 			productRefGroup = BFE0F5A926D8E54A009BD997 /* Products */;
 			projectDirPath = "";
@@ -197,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3CC57F26D96EB0005187FF /* README.md in Resources */,
 				BFE0F5B326D8E54B009BD997 /* Preview Assets.xcassets in Resources */,
 				BFE0F5B026D8E54B009BD997 /* Assets.xcassets in Resources */,
 			);
@@ -219,6 +230,7 @@
 			files = (
 				BFE0F5AE26D8E54A009BD997 /* ContentView.swift in Sources */,
 				BF3CC56D26D965E6005187FF /* TravellingSalesmanBruteForce.swift in Sources */,
+				BF3CC58126D970D2005187FF /* City.swift in Sources */,
 				BFE0F5AC26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +493,14 @@
 				minimumVersion = 0.2.1;
 			};
 		};
+		BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/timsearle/Euclid.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,6 +508,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF3CC56926D95F8D005187FF /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
+		};
+		BF3CC57C26D96E3B005187FF /* Euclid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */;
+			productName = Euclid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

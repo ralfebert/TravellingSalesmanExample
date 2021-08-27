@@ -1,3 +1,16 @@
 # Naive Travelling salesman in Swift
 
-What's the most elegant solution in Swift to write the "try all combinations" brute-force solution of the [travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem)?
+What's the most elegant solution to write the naive "try all combinations" solution of the [travelling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) in Swift?
+
+See [TravellingSalesmanExample/TravellingSalesmanBruteForce.swift](TravellingSalesmanExample/TravellingSalesmanBruteForce.swift)
+
+## Improvements already implemented
+
+* Use permutations / adjacentPairs from Swift Algorithms
+* Use the Euclid package to compute the distance of two CLLocationCoordinate2D, see https://stackoverflow.com/a/68958391/128083
+* Use an interface HasLocation to allow arbitrary input types
+
+## Ideas / Todo
+
+* Compute distances only once
+* Unit test for performance
