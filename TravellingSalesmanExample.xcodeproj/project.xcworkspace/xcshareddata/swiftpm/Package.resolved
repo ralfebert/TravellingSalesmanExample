@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "Euclid",
-        "repositoryURL": "https://github.com/timsearle/Euclid.git",
-        "state": {
-          "branch": null,
-          "revision": "d812aa846d5202843ad01827f6bde3edd94eec9a",
-          "version": "3.0.2"
-        }
-      },
-      {
         "package": "swift-algorithms",
         "repositoryURL": "https://github.com/apple/swift-algorithms.git",
         "state": {

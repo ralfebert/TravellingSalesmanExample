@@ -10,7 +10,6 @@
 		BF3CC56B26D95F8D005187FF /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CC56A26D95F8D005187FF /* Algorithms */; };
 		BF3CC56D26D965E6005187FF /* TravellingSalesmanBruteForce.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC56C26D965E6005187FF /* TravellingSalesmanBruteForce.swift */; };
 		BF3CC57526D9661C005187FF /* TravellingSalesmanExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC57426D9661C005187FF /* TravellingSalesmanExampleTests.swift */; };
-		BF3CC57D26D96E3B005187FF /* Euclid in Frameworks */ = {isa = PBXBuildFile; productRef = BF3CC57C26D96E3B005187FF /* Euclid */; };
 		BF3CC57F26D96EB0005187FF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BF3CC57E26D96EB0005187FF /* README.md */; };
 		BF3CC58126D970D2005187FF /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3CC58026D970D2005187FF /* City.swift */; };
 		BFE0F5AC26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0F5AB26D8E54A009BD997 /* TravellingSalesmanExampleApp.swift */; };
@@ -55,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF3CC57D26D96E3B005187FF /* Euclid in Frameworks */,
 				BF3CC56B26D95F8D005187FF /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +146,6 @@
 			name = TravellingSalesmanExample;
 			packageProductDependencies = (
 				BF3CC56A26D95F8D005187FF /* Algorithms */,
-				BF3CC57C26D96E3B005187FF /* Euclid */,
 			);
 			productName = CounterExample;
 			productReference = BFE0F5A826D8E54A009BD997 /* TravellingSalesmanExample.app */;
@@ -183,7 +180,6 @@
 			mainGroup = BFE0F59F26D8E54A009BD997;
 			packageReferences = (
 				BF3CC56926D95F8D005187FF /* XCRemoteSwiftPackageReference "swift-algorithms" */,
-				BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */,
 			);
 			productRefGroup = BFE0F5A926D8E54A009BD997 /* Products */;
 			projectDirPath = "";
@@ -493,14 +489,6 @@
 				minimumVersion = 0.2.1;
 			};
 		};
-		BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/timsearle/Euclid.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -508,11 +496,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BF3CC56926D95F8D005187FF /* XCRemoteSwiftPackageReference "swift-algorithms" */;
 			productName = Algorithms;
-		};
-		BF3CC57C26D96E3B005187FF /* Euclid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BF3CC57B26D96E3B005187FF /* XCRemoteSwiftPackageReference "Euclid" */;
-			productName = Euclid;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

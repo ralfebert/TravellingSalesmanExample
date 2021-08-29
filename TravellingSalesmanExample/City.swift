@@ -1,4 +1,5 @@
 import CoreLocation
+import MapKit
 
 struct City {
     let name: String
@@ -20,4 +21,7 @@ extension City {
         City(name: "Hannover", location: .init(latitude: 52.370, longitude: 9.733)),
     ]
 
+    static func distance(_ a: City, _ b: City) -> Double {
+        MKMapPoint(a.location).distance(to: MKMapPoint(b.location))
+    }
 }
