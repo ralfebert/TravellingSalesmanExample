@@ -11,7 +11,7 @@ struct ContentView: View {
             }
 
             Button("Find route") {
-                self.solution = travellingSalesmanBruteForce(locations: City.exampleCities)
+                self.solution = travellingSalesmanBruteForce(locations: City.exampleCities, distance: City.distance)
             }
         }
     }
