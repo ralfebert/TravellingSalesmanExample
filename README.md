@@ -8,12 +8,11 @@ See [TravellingSalesmanExample/TravellingSalesmanBruteForce.swift](TravellingSal
 
 * Use permutations / adjacentPairs from [Swift Algorithms](https://github.com/apple/swift-algorithms)
 * Use the Euclid package to compute the distance of two CLLocationCoordinate2D, see https://stackoverflow.com/a/68958391/128083
-* Use an interface HasLocation to allow arbitrary input types
+* Allow arbitrary input types by passing a distance function
+* Compute distances only once and use a adjacency matrix (branch adjacency-matrix)
 
 ## Ideas / Todo
 
-* Compute distances only once
-* Unit test for performance
 * Show path using MapKit (maybe interactive: show the best current path)
 * Is there a better exact algorithm that's still straightforward?
 * Implement a heuristic algorithm as alternative

@@ -17,4 +17,10 @@ class TravellingSalesmanExampleTests: XCTestCase {
         XCTAssertEqual(["Berlin", "Leipzig", "Dresden", "München", "Stuttgart", "Karlsruhe", "Frankfurt", "Hannover", "Hamburg", "Kiel"], travellingSalesmanBruteForce(locations: City.exampleCities, distance: distance).map(\.name))
     }
 
+    func testPerformance() {
+        measure {
+            XCTAssertEqual(["Berlin", "Leipzig", "Dresden", "München", "Stuttgart", "Frankfurt", "Hamburg", "Kiel"], travellingSalesmanBruteForce(locations: City.exampleCities.dropLast(2), distance: distance).map(\.name))
+        }
+    }
+
 }

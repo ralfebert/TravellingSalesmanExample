@@ -1,14 +1,13 @@
 import Algorithms
 
 func travellingSalesmanBruteForce<Location>(locations: [Location], distance: (Location, Location) -> Double) -> [Location] {
-    guard let start = locations.first else { return [] }
-    let remaining = locations.dropFirst()
+    // Use the first location as start - the result is the cycle, so it doesn't matter which location
+    // is used to start
+    guard let first = locations.first else { return [] }
+    let permutations = locations.dropFirst().permutations().map { [first] + $0 }
 
-    let paths = remaining.permutations().map { pathWithoutStart -> (path: [Location], cost: Double) in
-        let path = [start] + pathWithoutStart
-        let cost = path.adjacentPairs().map { a, b in distance(a, b) }.reduce(0, +)
-        return (path: path, cost: cost)
-    }
-
-    return paths.min { $0.cost < $1.cost }!.path
+    return permutations
+        .map { path -> (path: [Location], cost: Double) in (path: path, cost: path.adjacentPairs().map(distance).reduce(0, +)) }
+        .min { $0.cost < $1.cost }!
+        .path
 }
