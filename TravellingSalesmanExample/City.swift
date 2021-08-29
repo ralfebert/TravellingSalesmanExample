@@ -1,6 +1,6 @@
 import CoreLocation
 
-struct City: HasLocation {
+struct City {
     let name: String
     let location: CLLocationCoordinate2D
 }

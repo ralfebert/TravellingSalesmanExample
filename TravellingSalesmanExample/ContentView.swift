@@ -1,3 +1,4 @@
+import Euclid
 import SwiftUI
 
 struct ContentView: View {
@@ -11,7 +12,7 @@ struct ContentView: View {
             }
 
             Button("Find route") {
-                self.solution = travellingSalesmanBruteForce(locations: City.exampleCities)
+                self.solution = travellingSalesmanBruteForce(locations: City.exampleCities) { $0.location.distance(to: $1.location) }
             }
         }
     }

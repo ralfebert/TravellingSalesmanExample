@@ -1,20 +1,14 @@
 import Algorithms
-import CoreLocation
-import Euclid
 
-protocol HasLocation {
-    var location: CLLocationCoordinate2D { get }
-}
-
-func cost(path: [HasLocation]) -> Double {
-    path.adjacentPairs().map { a, b in a.location.distance(to: b.location) }.reduce(0, +)
-}
-
-func travellingSalesmanBruteForce<Location: HasLocation>(locations: [Location]) -> [Location] {
+func travellingSalesmanBruteForce<Location>(locations: [Location], distance: (Location, Location) -> Double) -> [Location] {
     guard let start = locations.first else { return [] }
     let remaining = locations.dropFirst()
 
-    let paths = remaining.permutations().map { [start] + $0 }
+    let paths = remaining.permutations().map { pathWithoutStart -> (path: [Location], cost: Double) in
+        let path = [start] + pathWithoutStart
+        let cost = path.adjacentPairs().map { a, b in distance(a, b) }.reduce(0, +)
+        return (path: path, cost: cost)
+    }
 
-    return paths.min { cost(path: $0) < cost(path: $1) }!
+    return paths.min { $0.cost < $1.cost }!.path
 }
