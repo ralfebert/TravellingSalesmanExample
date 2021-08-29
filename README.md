@@ -14,3 +14,10 @@ See [TravellingSalesmanExample/TravellingSalesmanBruteForce.swift](TravellingSal
 
 * Compute distances only once
 * Unit test for performance
+* Show path using MapKit (maybe interactive: show the best current path)
+* Is there a better exact algorithm that's still straightforward?
+* Implement a heuristic algorithm as alternative
+
+## Existing implementations
+
+* [dnadoba/traveling-salesman-problem: macOS App written in Swift to find the shortest path](https://github.com/dnadoba/traveling-salesman-problem)
