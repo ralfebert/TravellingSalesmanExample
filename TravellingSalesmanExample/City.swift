@@ -7,7 +7,6 @@ struct City {
 }
 
 extension City {
-
     static let exampleCities = [
         City(name: "Berlin", location: .init(latitude: 52.518, longitude: 13.408)),
         City(name: "Leipzig", location: .init(latitude: 51.340, longitude: 12.360)),

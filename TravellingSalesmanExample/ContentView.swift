@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-
     @State var solution: [City]?
     @State var currentTask: Task<Void, Never>?
 
